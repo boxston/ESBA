@@ -4,7 +4,8 @@
 #include "ocultar_cursor.hpp"
 #include "gotoxy.hpp"
 using namespace std;
-void interfaz(){	
+void interfaz(){
+    system("cls");
 	hideCursor();
 	for(int i=2; i<90; i++){
 		gotoxy(i,1); printf("%c", 205);
@@ -26,5 +27,7 @@ void interfaz(){
 	gotoxy(31,2); cout<<"HERRAMIENTAS DE PROGRAMACION";
 	gotoxy(3,23); cout<<"Alumno: Rodriguez Alan Nahuel";
 	gotoxy(3,24); printf("A%co: 2024", 164);
+	
+	gotoxy(3, 5);
 }
 #endif
