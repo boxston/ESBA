@@ -1,28 +1,28 @@
 #ifndef MENU_H
 #define MENU_H
-
-#include "opciones_menu.hpp"
 #include <iostream>
 #include <conio.h>
+#include "opciones_menu.hpp"
+#include "interfaz.hpp"
 
 using namespace std;
 void imprimirMenu(int seleccion) {
-    system("cls");
     for (int i = 0; i < cantidad; ++i) {
         if (i == seleccion) {
             cout << "\033[47m\033[30m";
         } else {
             cout << "\033[0m";
         }
-        cout << opciones[i] << endl;
+        int x = (15 - opciones[i].size()) / 2;
+        gotoxy(36+x,10+i);
+        if(opciones[i] == "Salir ...") gotoxy(78,24);
+		cout << opciones[i];
     }
     cout << "\033[0m";
 }
-
 int menu() {
     int seleccion = 0;
     char tecla;
-    
     do {
         imprimirMenu(seleccion);
         tecla = _getch();
@@ -39,8 +39,7 @@ int menu() {
                 }
                 break;
         }
-    } while (tecla != 13);
-    
+    } while (tecla != 13);    
     return seleccion + 1;
 }
 #endif

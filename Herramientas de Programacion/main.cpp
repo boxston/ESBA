@@ -1,17 +1,12 @@
 #include <iostream>
 #include <conio.h>
-
-#include <windows.h>
-#include "ocultar_cursor.hpp"
 #include "menu.hpp"
-
+#include "interfaz.hpp"
+#include "gotoxy.hpp"
 using namespace std;
 int main () {
-	hideCursor();
-	int opcion = menu();
-	cout<<"La opcion seleccionada es: "<< opcion << endl;
-	if (opcion == 6) {
-        ExitProcess(0);
-    }
+	interfaz();
+	if (menu() == 5) ExitProcess(0);
+	gotoxy(1,27); system("PAUSE");
 	return 0;
 }
