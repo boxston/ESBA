@@ -4,12 +4,14 @@
 #include <string>
 
 using namespace std;
-const int cantidad = 5;
+const int cantidad = 7;
 const string opciones[cantidad] = {
     "TP 1",
-    "TP 2",
-    "TP 3",
-    "TP 4",
+    "TP 2 - Ej 1",
+    "TP 2 - Ej 2",
+    "TP 2 - Ej 3",
+    "TP 2 - Ej 4",
+    "Integrantes del Grupo",
     "Salir ..."
 };
 #endif

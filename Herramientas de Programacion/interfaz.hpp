@@ -25,7 +25,6 @@ void interfaz(){
 	gotoxy(66,26); printf("Fijar ventana en 90x30");
 	
 	gotoxy(31,2); cout<<"HERRAMIENTAS DE PROGRAMACION";
-	gotoxy(3,23); cout<<"Alumno: Rodriguez Alan Nahuel";
 	gotoxy(3,24); printf("A%co: 2024", 164);
 	
 	gotoxy(3, 5);
