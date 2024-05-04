@@ -7,6 +7,7 @@
 #include "tp2_1.hpp"
 #include "tp2_2.hpp"
 #include "tp2_3.hpp"
+#include "tp2_4.hpp"
 #include "integrantes.hpp"
 
 // IMPORTANTE: 1. Cada ejercicio al comenzar debe mostrar por pantalla el APELLIDO y NOMBRE (en ese orden) 
@@ -40,6 +41,10 @@ navegacion(int seleccion){
 	    case 4:
 	    	interfaz();
 			tp2_3();
+	        break;
+	    case 5:
+	    	interfaz();
+			tp2_4();
 	        break;
 	    // ...
 	    default:
