@@ -24,7 +24,10 @@ int tp2_2()
 		if(i % 2 == 0){
 			par++;
 		}else{
-			if(impar <= 80) cout<< "\033[49m\033[32m"<< i << endl;
+			if(impar <= 80){
+				cout<< "\033[49m\033[32m"<< i << endl;
+				Sleep(100);
+			} 
 			impar++;
 		}
 		cout << "\033[0m";

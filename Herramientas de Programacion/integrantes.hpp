@@ -5,13 +5,12 @@
 #include "volver_menu.hpp"
 using namespace std;
 string (*getIntegrantes())[2]{
-	static string listado[10][2] = {
+	static string listado[9][2] = {
 	    {"Rodriguez", "Alan"},
 	    {"Ali", "Benjamin"},
 	    {"Cinquemani", "Carolina"},
 	    {"Mas", "Federico"},
 	    {"Arboleya", "Guido"},
-	    {"Vinolo", "Lucas"},
 	    {"Pelleritti", "Pedro"},
 	    {"Martinez", "Rocio"},
 	    {"Hormigo", "Tamara"},
@@ -23,7 +22,7 @@ int integrantes(int ejeX, int EjeY, int pintado)
 {
 	string (*listado)[2] = getIntegrantes();
     gotoxy(ejeX,EjeY); cout << "Integrantes Grupo A1:" << endl;
-    for(int i = 0; i < 10; i++) {
+    for(int i = 0; i < 9; i++) {
         gotoxy(ejeX, (EjeY+1)+i);
         if(i == pintado){
         	cout << "\033[42m\033[30m";

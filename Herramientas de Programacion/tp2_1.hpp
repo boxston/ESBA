@@ -2,7 +2,10 @@
 #define TP2_1_H
 #include "integrantes.hpp"
 #include "volver_menu.hpp"
-#include <vector>
+string format(string cadena){	
+  for (int i = 0; i < cadena.length(); i++) cadena[i] = toupper(cadena[i]);
+  return cadena;
+}
 int tp2_1()
 {
 	string (*listado)[2] = getIntegrantes();
@@ -17,11 +20,17 @@ int tp2_1()
 	cin >> apellido;
 	cout << endl;
 	
-	int encontrado = -1;
+	nombre = format(nombre);
+	apellido = format(apellido);
 	
-	for(int i = 0; i < 10 ; i++){
-		if(nombre == listado[i][1] && apellido == listado[i][0]){
+	int encontrado = -1;
+		
+	for(int i = 0; i < 9 ; i++){
+		string nombreMay = format(listado[i][1]);
+		string apellidoMay = format(listado[i][0]);
+		if(nombre == nombreMay && apellido == apellidoMay){
 			encontrado = i;
+			break;
 		}
 	}
 	

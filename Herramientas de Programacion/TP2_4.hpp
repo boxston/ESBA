@@ -4,18 +4,6 @@
 #include "volver_menu.hpp"
 #include <vector>
 #include <unistd.h> 
-void cuentaRegresiva2(int n){
-	for(int i=n; i >= 0; i--){
-		
-		if(i > 30) cout << "\033[32m";
-		if(i < 30) cout << "\033[33m";
-		if(i < 10) cout << "\033[31m";
-		gotoxy(48,5); cout << i << "  ";
-		sleep(1);
-	}
-	gotoxy(48,5); cout << "\033[36mFIN";
-	cout << "\033[0m";
-}
 int esPar(int linea){
 	int n;
 	do{

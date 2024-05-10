@@ -17,32 +17,28 @@ using namespace std;
 navegacion(int seleccion){
 	int tecla = 0;
 	switch (seleccion) {
-	    case 7:
+	    case 6:
 			gotoxy(3,26);
 	        ExitProcess(0);
 	        break;
-	    case 6:
+	    case 5:
 	    	interfaz();
 	    	integrantes(35, 6, -1);	    	
     		volver_menu();
 	        break;
 	    case 1:
 	    	interfaz();
-			tp1();
+			tp2_1();
 	        break;
 	    case 2:
 	    	interfaz();
-			tp2_1();
+			tp2_2();
 	        break;
 	    case 3:
 	    	interfaz();
-			tp2_2();
-	        break;
-	    case 4:
-	    	interfaz();
 			tp2_3();
 	        break;
-	    case 5:
+	    case 4:
 	    	interfaz();
 			tp2_4();
 	        break;

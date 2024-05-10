@@ -1,6 +1,6 @@
 [Project]
 FileName=Rodriguez_Alan_Nahuel.dev
-Name=Rodriguez_Alan_Nahuel
+Name=Grupo_A1_2024
 Type=1
 Ver=2
 ObjFiles=
@@ -19,7 +19,7 @@ ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=
+OverrideOutputName=Rodriguez_Alan_Nahuel.exe
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=1
 CompilerSettings=0000000000000000001000000
-UnitCount=10
+UnitCount=12
 
 [VersionInfo]
 Major=1
@@ -142,6 +142,26 @@ BuildCmd=
 
 [Unit10]
 FileName=tp2_2.hpp
+CompileCpp=1
+Folder=components
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit11]
+FileName=TP2_3.hpp
+CompileCpp=1
+Folder=components
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit12]
+FileName=TP2_4.hpp
 CompileCpp=1
 Folder=components
 Compile=1
