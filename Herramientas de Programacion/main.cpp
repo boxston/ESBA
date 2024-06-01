@@ -3,11 +3,16 @@
 #include "menu.hpp"
 #include "interfaz.hpp"
 #include "gotoxy.hpp"
+#include "clear.hpp"
 #include "tp1.hpp"
 #include "tp2_1.hpp"
 #include "tp2_2.hpp"
 #include "tp2_3.hpp"
 #include "tp2_4.hpp"
+#include "tp3_1.hpp"
+#include "tp3_2.hpp"
+#include "tp3_3.hpp"
+#include "tp3_4.hpp"
 #include "integrantes.hpp"
 
 // IMPORTANTE: 1. Cada ejercicio al comenzar debe mostrar por pantalla el APELLIDO y NOMBRE (en ese orden) 
@@ -17,15 +22,6 @@ using namespace std;
 navegacion(int seleccion){
 	int tecla = 0;
 	switch (seleccion) {
-	    case 6:
-			gotoxy(3,26);
-	        ExitProcess(0);
-	        break;
-	    case 5:
-	    	interfaz();
-	    	integrantes(35, 6, -1);	    	
-    		volver_menu();
-	        break;
 	    case 1:
 	    	interfaz();
 			tp2_1();
@@ -41,6 +37,31 @@ navegacion(int seleccion){
 	    case 4:
 	    	interfaz();
 			tp2_4();
+	        break;
+	    case 5:
+	    	interfaz();
+			tp3_1();
+	        break;
+	    case 6:
+	    	interfaz();
+			tp3_2();
+	        break;
+	    case 7:
+	    	interfaz();
+			tp3_3();
+	        break;
+	    case 8:
+	    	interfaz();
+			tp3_4();
+	        break;
+	    case 9:
+	    	interfaz();
+	    	integrantes(35, 6, -1);	    	
+    		volver_menu();
+	        break;
+	    case 10:
+			gotoxy(3,26);
+	        ExitProcess(0);
 	        break;
 	    // ...
 	    default:
